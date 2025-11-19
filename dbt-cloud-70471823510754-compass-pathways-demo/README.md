@@ -43,6 +43,7 @@ The goal was to mirror the overall structure and flow of clinical data — model
 
 ---
 
+
 ## 🔧 Enhancements & Compass Relevance
 
 - Built around stakeholder-facing metrics
@@ -52,15 +53,9 @@ The goal was to mirror the overall structure and flow of clinical data — model
 
 ---
 
-## 🖼️ How to Include Screenshots in GitHub README
-
-To display images in Markdown:
-
-1. Add image files to your repo (e.g. in a `/screenshots` folder)
-2. Reference them like this:
-
-```markdown
-![DAG Lineage](screenshots/dbt_dag.png)
-![dbt Docs](screenshots/dbt_docs.png)
+<img width="1468" height="796" alt="dbtlineage" src="https://github.com/user-attachments/assets/016695c6-7662-47dd-89c3-489af41a6276" />
 
 
+<img width="1108" height="800" alt="metabasedashboard" src="https://github.com/user-attachments/assets/84c0de32-1f21-4951-8fe9-3355db8c798a" />
+
+<img width="1428" height="788" alt="neondb" src="https://github.com/user-attachments/assets/eed680bb-769e-4336-8929-f0111f154b6d" />
