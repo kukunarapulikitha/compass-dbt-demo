@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: clinical_dashboard
+    description: Final mart containing patient data with latest assessment details.
+    columns:
+      - name: patient_id
+        tests:
+          - not_null
+          - unique
+      - name: site_name
+      - name: location
+      - name: latest_score
+      - name: latest_date
