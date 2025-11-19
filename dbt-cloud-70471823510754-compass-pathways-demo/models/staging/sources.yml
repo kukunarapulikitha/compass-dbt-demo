@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: raw
-    schema: public
+  - name: compass_raw
+    schema: dbt_lkukunarapu
     database: neondb
     tables:
       - name: patients
@@ -12,7 +12,7 @@ sources:
             description: Unique identifier for each patient.
           - name: site_id
             description: Site where patient is enrolled.
-          - name: created_at
+          - name: enroll_date
             description: Record creation timestamp.
 
       - name: sites
@@ -22,16 +22,14 @@ sources:
             description: Unique site identifier.
           - name: site_name
             description: Name of the clinical site.
-          - name: location
-            description: Location of the site.
-
+          
       - name: assessments
         description: Raw patient assessment records.
         columns:
-          - name: assessment_id
-            description: Unique identifier for each assessment.
           - name: patient_id
             description: ID of patient who took the assessment.
+          - name: day
+            description: after how many days is follow-up
           - name: score
             description: Assessment score.
           - name: assessment_date
