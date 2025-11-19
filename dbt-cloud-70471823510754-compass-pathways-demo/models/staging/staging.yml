@@ -10,7 +10,7 @@ models:
           - unique
       - name: site_id
       - name: enroll_date
-      - name: created_at
+  
 
   - name: stg_sites
     description: Cleaned sites data
@@ -20,16 +20,13 @@ models:
           - not_null
           - unique
       - name: site_name
-      - name: location
+
 
   - name: stg_assessments
     description: Cleaned assessments data
     columns:
-      - name: assessment_id
-        tests:
-          - not_null
-          - unique
       - name: patient_id
+      - name: day
       - name: severity_score
       - name: assessment_date
-      - name: created_at
+    
