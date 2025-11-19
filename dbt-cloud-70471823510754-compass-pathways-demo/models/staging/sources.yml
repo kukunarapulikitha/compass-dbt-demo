@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: raw
+  - name: compass_raw
     schema: public
     database: neondb
     tables:
