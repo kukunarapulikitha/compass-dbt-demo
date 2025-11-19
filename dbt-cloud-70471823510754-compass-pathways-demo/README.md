@@ -9,7 +9,7 @@ The goal was to mirror the overall structure and flow of clinical data — model
 ## Workflow Overview
 
 
-- **Postgres**: Input patient + site data
+- **Postgres**: Input patient, site, assessment data
 - **dbt Staging**: Standardizes raw tables
 - **dbt Intermediate**: Cleans data, applies logic (e.g. severity scoring)
 - **dbt Marts**: Final curated models ready for analytics
@@ -29,13 +29,14 @@ The goal was to mirror the overall structure and flow of clinical data — model
 ## dbt Features
 
 - Schema modeling
-- Incremental load setup
-- Data validation via dbt tests
+- Data validation via dbt tests .yml files
 - Auto-generated documentation
 - DAG lineage (visualized)
 
  **Screenshots included:**
-- DAG lineage view  
+- DAG lineage view
+- Metabase visualization
+- Neon db(Postgres) data tables and views
 - dbt Cloud job setup  
 - Model documentation pages
 
@@ -55,10 +56,13 @@ The goal was to mirror the overall structure and flow of clinical data — model
 ---
 
 ## Enhancements & Compass Relevance
-- Built around stakeholder-facing metrics
+
 - Mirrors Compass’ modular tech stack (dbt, SQL, dashboards)
-- Focused on quality, structure, and visibility into data flows
 - Can be scaled with additional metrics or CI/CD pipelines
+- Extend data to track clinical-trial KPIs like enrollment rate, remission rates and commercial KPI's like site performance, operational           bottlenecks, as required by stakeholders
+- Can improve dashboard layout and filters for clinical and commercial stakeholders
+- Leverage dbt for schema modeling, incremental loads
+
 
 
 
