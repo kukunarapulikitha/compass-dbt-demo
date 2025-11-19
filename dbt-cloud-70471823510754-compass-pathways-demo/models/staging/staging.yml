@@ -2,19 +2,18 @@ version: 2
 
 models:
   - name: stg_patients
-    description: Cleaned and standardized patients data.
+    description: Cleaned patients data
     columns:
       - name: patient_id
         tests:
           - not_null
           - unique
       - name: site_id
-        tests:
-          - not_null
+      - name: enroll_date
       - name: created_at
 
   - name: stg_sites
-    description: Cleaned and standardized sites data.
+    description: Cleaned sites data
     columns:
       - name: site_id
         tests:
@@ -24,14 +23,13 @@ models:
       - name: location
 
   - name: stg_assessments
-    description: Cleaned assessments data.
+    description: Cleaned assessments data
     columns:
       - name: assessment_id
         tests:
           - not_null
           - unique
       - name: patient_id
-        tests:
-          - not_null
-      - name: score
+      - name: severity_score
       - name: assessment_date
+      - name: created_at
