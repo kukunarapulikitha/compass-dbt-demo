@@ -63,6 +63,6 @@ The goal was to mirror the overall structure and flow of clinical data — model
 - Can improve dashboard layout and filters for clinical and commercial stakeholders
 - Leverage dbt for schema modeling, incremental loads
 
-
+## Happy reading!
 
 
