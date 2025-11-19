@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: int_latest_assessments
+    description: Latest assessment per patient.
+    columns:
+      - name: patient_id
+        tests:
+          - not_null
+      - name: latest_score
+      - name: latest_date
