@@ -1,5 +1,4 @@
 select
     site_id,
-    site_name,
-    location
+    site_name
 from {{ source('compass_raw', 'sites') }}

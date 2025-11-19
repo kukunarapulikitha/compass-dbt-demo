@@ -1,7 +1,6 @@
 select
-    assessment_id,
     patient_id,
+    day,
     severity_score,
-    assessment_date,
-    created_at
+    assessment_date
 from {{ source('compass_raw', 'assessments') }}

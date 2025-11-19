@@ -8,4 +8,4 @@ from {{ ref('stg_patients') }} as sp
 join {{ ref('stg_sites') }} as ss
     on sp.site_id = ss.site_id
 join {{ ref('int_latest_assessments') }} as ila
-    on sp.patient_id = ila.patient_id;
+    on sp.patient_id = ila.patient_id

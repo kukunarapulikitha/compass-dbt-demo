@@ -1,6 +1,5 @@
 with ranked as (
     select
-        assessment_id,
         patient_id,
         severity_score,
         assessment_date,
@@ -12,9 +11,8 @@ with ranked as (
 )
 
 select
-    assessment_id,
     patient_id,
     severity_score,
     assessment_date
 from ranked
-where row_num = 1;
+where row_num = 1
